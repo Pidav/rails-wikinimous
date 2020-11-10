@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Editing article</h1>
+  <div class="article-form">
+    <%= simple_form_for(@article) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+  <hr>
+  <div class="d-flex">
+    <p class="mr-2 pr-2 border-right"> <%= link_to "Show", article_path(@article) %></p>
+    <p> <%= link_to "Back", articles_path %></p>
+  </div>
+</div>
+

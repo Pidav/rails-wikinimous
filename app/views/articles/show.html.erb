@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="title-box d-flex align-items-center mt-4">
+    <h2> <%= @article.title %>
+    <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_article_path %>
+    <%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+    </h2>
+  </div>
+  <hr>
+  <p class="content"><%= @article.content %></p>
+  <hr>
+  <p> <%= link_to "Back", articles_path %></p>
+</div>

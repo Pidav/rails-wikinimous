@@ -1,0 +1,40 @@
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 20px;
+  a {
+    color: darkgrey;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color:  #23527C;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.content {
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+  padding: 0;
+}
+
+label {
+  font-family: "Helvetica Neue";
+  font-weight: bolder;
+}

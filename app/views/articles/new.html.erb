@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>New article</h1>
+  <div class="article-form">
+    <%= simple_form_for(@article) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+  <hr>
+  <p> <%= link_to "Back", articles_path %></p>
+</div>
